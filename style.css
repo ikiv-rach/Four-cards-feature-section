@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+   background-color: hsl(0, 0%, 98%);
+    
+  }
+  main{
+    text-align:center;
+  }
+  
+  .thick{
+    font-weight: 400;
+    font-size:20px;
+    color:hsl(234, 12%, 34%);
+  }
+p{
+  color:hsl(229, 6%, 66%);
+}
+  .h2{
+    font-weight:600;
+    font-size:50px;
+    color:hsl(234, 12%, 34%);
+  }
+  h3{
+    color:hsl(234, 12%, 34%);
+  }
+  /* Float four columns side by side */
+ 
+  .container{
+    display:flex;
+  }
+  .shitta{
+    margin-right:4rem;
+    width:30%;
+    
+  }
+  .column-1 {
+    display:flex;
+    padding: 0 10px;
+    margin-top:4rem;
+    
+  }
+  .row{
+    margin-left:4rem;
+  
+  }
+  .column-2 {
+    flex-direction: column;
+    width:30%;
+    padding: 0 10px;
+    
+  }
+  
+  
+  
+  /* Style the cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top:4px solid ;
+    border-radius:5px 5px 0 0px;
+    text-align:left;
+    margin-top: 2rem;
+    height: 250px;
+   
+  }
+  .cardA{
+    border-top-color:hsl(180, 62%, 55%);
+    
+  }
+  .cardB{
+    border-top-color: hsl(0, 78%, 62%);
+   
+  }
+  .cardC{
+    border-top-color:hsl(34, 97%, 64%);
+    margin-top:2rem;
+    
+  }
+  .cardD{
+    border-top-color:hsl(212, 86%, 64%);
+  
+  }
+  img{
+    float:right;
+    padding: 20px;
+  }
+  
+  .attribution{
+    text-align: center;
+    padding: 40px 0 0 0;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 375px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .column-2, .column-1{
+      width:100%;
+    }
+    .row{
+      margin:0;
+    }
+    .shitta{
+      margin-top:-4rem;
+      width:100%;
+    }
+    .card, .cardC{
+      margin-top:1rem;
+    }
+    
+  }
